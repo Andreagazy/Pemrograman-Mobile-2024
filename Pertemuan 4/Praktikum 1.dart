@@ -11,10 +11,9 @@ void main() {
   print(list[1]);
 
 // Langkah 3
-  final List<String?> listNIM = List.filled(6, null);
-  listNIM[1] = 'Nama : Andreagazy Iza Amerianto, NIM : 2241720146';
-  listNIM[2] = 'Nama : Andreagazy Iza Amerianto, NIM : 2241720146';
-
-  print(listNIM[1]);
-  print(listNIM[2]);
+  final listNama = [null, "Andreagazy Iza Amerianto", "2241720146", 1, 1];
+  assert(listNama.length == 5);
+  for (var i = 0; i < listNama.length; i++) {
+    print(listNama[i]);
+  }
 }
