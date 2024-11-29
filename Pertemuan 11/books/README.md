@@ -33,6 +33,7 @@ Tambahkan method ini ke dalam class _FuturePageState yang berguna untuk mengambi
 <img src="assets/img/P1-Langkah4.png">
 
 ```md
+#### Soal 2
 - Carilah judul buku favorit Anda di Google Books, lalu ganti ID buku pada variabel path di kode tersebut. Caranya ambil di URL browser Anda seperti gambar berikut ini.
 
 <img src="assets/img/Soal2-1.png">
@@ -41,6 +42,21 @@ Tambahkan method ini ke dalam class _FuturePageState yang berguna untuk mengambi
 <img src="assets/img/Soal2-2.png">
 ```
 
+### Langkah 5: Tambah kode di ElevatedButton
+Tambahkan kode pada onPressed di ElevatedButton seperti berikut.
 
+<img src="assets/img/P1-Langkah5.png">
 
+Lakukan run aplikasi Flutter Anda. Anda akan melihat tampilan akhir seperti gambar berikut. Jika masih terdapat error, silakan diperbaiki hingga bisa running.
 
+### Hasil
+<img src="assets/img/P1-Hasil.png">
+
+```md
+#### Soal 3
+- Jelaskan maksud kode langkah 5 tersebut terkait substring dan catchError!
+`substring(0, 450)` berfungsi untuk mengambil bagian awal dari body respons HTTP dengan panjang maksimal 450 karakter. `catchError` berfungsi untuk menangani error yang mungkin terjadi saat memanggil fungsi getData(). 
+- Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W11: Soal 3".
+<img src="assets/img/P1-Hasil.png">
+
+```
