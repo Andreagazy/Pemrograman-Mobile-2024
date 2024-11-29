@@ -180,3 +180,24 @@ Setelah selesai, nilai-nilai dari setiap Future dikumpulkan, dijumlahkan menjadi
 Langkah 2 : Future.wait<int>([]) langsung menunggu kumpulan Future yang diberikan sebagai daftar sejak awal.
 Fungsi ini menjalankan tiga Future (returnOneAsync, returnTwoAsync, returnThreeAsync) secara paralel dan menunggu hingga semuanya selesai, tanpa memerlukan langkah tambahan seperti close().
 ```
+
+## Praktikum 5: Menangani Respon Error pada Async Code
+
+### Langkah 1: Buka file main.dart
+Tambahkan method ini ke dalam class _FuturePageState
+
+<img src="assets/img/P5-Langkah1.png">
+
+### Langkah 2: ElevatedButton
+Ganti dengan kode berikut
+<img src="assets/img/P5-Langkah2.png">
+
+### Langkah 3: Run
+Lakukan run dan klik tombol GO! maka akan menghasilkan seperti gambar berikut.
+<img src="assets/img/P5-Langkah3.png">
+<img src="assets/img/P5-Langkah3-1.png">
+
+```md
+#### Soal 9
+Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W11: Soal 9".
+```
