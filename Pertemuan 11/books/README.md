@@ -201,3 +201,17 @@ Lakukan run dan klik tombol GO! maka akan menghasilkan seperti gambar berikut.
 #### Soal 9
 Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W11: Soal 9".
 ```
+
+### Langkah 4: Tambah method handleError()
+Tambahkan kode ini di dalam class _FutureStatePage
+<img src="assets/img/P5-Langkah4.png">
+
+```md
+#### Soal 10
+Panggil method handleError() tersebut di ElevatedButton, lalu run. Apa hasilnya? Jelaskan perbedaan kode langkah 1 dan 4! 
+<img src="assets/img/Soal10-1.png">
+<img src="assets/img/Soal10-2.png">
+
+<br><br>
+ returnError() bertugas menunda eksekusi selama 2 detik menggunakan Future.delayed lalu melemparkan sebuah error dengan pesan tertentu. Fungsi ini hanya memicu error tanpa penanganan lebih lanjut. Sementara itu, handleError() memanggil returnError dan menangani error tersebut menggunakan try-catch. Jika error terjadi, fungsi ini akan menangkapnya, memperbarui hasil ke UI dengan setState, dan menampilkan pesan error. Setelah itu, blok finally memastikan bahwa pesan 'Complete' selalu dicetak, terlepas dari apakah operasi berhasil atau gagal.
+```
