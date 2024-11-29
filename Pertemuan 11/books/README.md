@@ -141,3 +141,25 @@ Ganti menjadi kode seperti berikut.
 Kode sekarang memiliki try-catch di dalam fungsi calculate() untuk menangkap error. Jika terjadi error, completer.completeError({}) dipanggil, menandakan bahwa Future berakhir dengan error.
 - Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W11: Soal 6".
 ```
+
+## Praktikum 4: Memanggil Future secara paralel
+
+### Langkah 1: Buka file main.dart
+Tambahkan method ini ke dalam class _FuturePageState
+
+<img src="assets/img/P4-Langkah1.png">
+
+### Langkah 2: Edit onPressed()
+Anda bisa hapus atau comment kode sebelumnya, kemudian panggil method dari langkah 1 tersebut.
+
+<img src="assets/img/P4-Langkah2.png">
+
+### Langkah 3: Run
+Anda akan melihat hasilnya dalam 3 detik berupa angka 6 lebih cepat dibandingkan praktikum sebelumnya menunggu sampai 9 detik.
+
+```md
+#### Soal 7
+- Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W11: Soal 7".
+<img src="assets/img/P4-Langkah3.png">
+
+```
