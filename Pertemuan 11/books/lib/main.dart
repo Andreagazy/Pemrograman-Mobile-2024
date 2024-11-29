@@ -111,6 +111,11 @@ class _FuturePageState extends State<FuturePage> {
 
   @override
   Widget build(BuildContext context) {
+    final futures = Future.wait<int>([
+      returnOneAsync(),
+      returnTwoAsync(),
+      returnThreeAsync(),
+    ]);
     return Scaffold(
       appBar: AppBar(
         title: const Text('Back from the Future - Andreagazy'),
@@ -122,7 +127,7 @@ class _FuturePageState extends State<FuturePage> {
             ElevatedButton(
               child: Text('GO!'),
               onPressed: () {
-                returnFG();
+                futures;
                 // count();
                 // setState(() {});
                 // getData().then((value) {

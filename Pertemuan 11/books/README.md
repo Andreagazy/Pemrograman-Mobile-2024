@@ -163,3 +163,20 @@ Anda akan melihat hasilnya dalam 3 detik berupa angka 6 lebih cepat dibandingkan
 <img src="assets/img/P4-Langkah3.png">
 
 ```
+
+### Langkah 4: Ganti variabel futureGroup
+Anda dapat menggunakan FutureGroup dengan Future.wait seperti kode berikut.
+
+<img src="assets/img/P4-Langkah4.png">
+
+```md
+
+#### Soal 8
+- Jelaskan maksud perbedaan kode langkah 1 dan 4!
+Langkah 1 : FutureGroup<int> adalah koleksi Future yang memungkinkan untuk menambahkan tugas secara dinamis dan menunggu hingga semuanya selesai.
+Fungsi returnFG() menambahkan tiga Future (returnOneAsync, returnTwoAsync, returnThreeAsync) ke dalam grup, menutup grup dengan close(), lalu menunggu hingga semuanya selesai.
+Setelah selesai, nilai-nilai dari setiap Future dikumpulkan, dijumlahkan menjadi 6, dan hasilnya diperbarui ke UI menggunakan setState(). <br>
+
+Langkah 2 : Future.wait<int>([]) langsung menunggu kumpulan Future yang diberikan sebagai daftar sejak awal.
+Fungsi ini menjalankan tiga Future (returnOneAsync, returnTwoAsync, returnThreeAsync) secara paralel dan menunggu hingga semuanya selesai, tanpa memerlukan langkah tambahan seperti close().
+```
