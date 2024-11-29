@@ -89,3 +89,37 @@ Akhirnya, run atau tekan F5 jika aplikasi belum running. Maka Anda akan melihat 
 Kode pada Langkah 1 terdiri dari tiga fungsi asinkron (returnOneAsync, returnTwoAsync, dan returnThreeAsync) yang masing-masing menunggu selama 3 detik sebelum mengembalikan angka 1, 2, dan 3. Pada Langkah 2, saat tombol GO! ditekan, fungsi count() dipanggil untuk menjalankan proses tersebut, kemungkinan menjumlahkan hasil dari ketiga fungsi asinkron tersebut.
 - Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W11: Soal 4".
 ``` 
+
+
+## Praktikum 3: Menggunakan Completer di Future
+
+### Langkah 1: Buka main.dart
+Pastikan telah impor package async berikut.
+
+```dart
+import 'package:async/async.dart';
+```
+
+### Langkah 2: Tambahkan variabel dan method
+Tambahkan variabel late dan method di class _FuturePageState seperti ini.
+
+<img src="assets/img/P3-Langkah2.png">
+
+### Langkah 3: Ganti isi kode onPressed()
+Tambahkan kode berikut pada fungsi onPressed(). Kode sebelumnya bisa Anda comment.
+
+<img src="assets/img/P3-Langkah3.png">
+
+### Langkah 4:
+Terakhir, run atau tekan F5 untuk melihat hasilnya jika memang belum running. Bisa juga lakukan hot restart jika aplikasi sudah running. Maka hasilnya akan seperti gambar berikut ini. Setelah 5 detik, maka angka 42 akan tampil.
+
+<img src="assets/img/P3-Langkah4.png">
+
+```md
+#### Soal 5
+- Jelaskan maksud kode langkah 2 tersebut!
+completer = Completer<int>();: Membuat objek Completer yang dapat menyelesaikan sebuah Future dengan nilai bertipe int.
+getNumber(): Mengembalikan Future yang akan diselesaikan oleh Completer setelah proses perhitungan selesai.
+calculate(): Fungsi asinkron yang menunggu selama 5 detik menggunakan Future.delayed sebelum memanggil completer.complete(42);, yang menyelesaikan Future dengan nilai 42.
+- Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W11: Soal 5".
+```
