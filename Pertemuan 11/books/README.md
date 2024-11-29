@@ -123,3 +123,21 @@ getNumber(): Mengembalikan Future yang akan diselesaikan oleh Completer setelah 
 calculate(): Fungsi asinkron yang menunggu selama 5 detik menggunakan Future.delayed sebelum memanggil completer.complete(42);, yang menyelesaikan Future dengan nilai 42.
 - Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W11: Soal 5".
 ```
+
+### Langkah 5: Ganti method calculate()
+Gantilah isi code method calculate() seperti kode berikut, atau Anda dapat membuat calculate2()
+
+<img src="assets/img/P3-Langkah5.png">
+
+### Langkah 6: Pindah ke onPressed()
+Ganti menjadi kode seperti berikut.
+
+<img src="assets/img/P3-Langkah6.png">
+
+
+```md
+#### Soal 6
+- Jelaskan maksud perbedaan kode langkah 2 dengan langkah 5-6 tersebut!
+Kode sekarang memiliki try-catch di dalam fungsi calculate() untuk menangkap error. Jika terjadi error, completer.completeError({}) dipanggil, menandakan bahwa Future berakhir dengan error.
+- Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W11: Soal 6".
+```
