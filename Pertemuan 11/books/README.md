@@ -215,3 +215,34 @@ Panggil method handleError() tersebut di ElevatedButton, lalu run. Apa hasilnya?
 <br><br>
  returnError() bertugas menunda eksekusi selama 2 detik menggunakan Future.delayed lalu melemparkan sebuah error dengan pesan tertentu. Fungsi ini hanya memicu error tanpa penanganan lebih lanjut. Sementara itu, handleError() memanggil returnError dan menangani error tersebut menggunakan try-catch. Jika error terjadi, fungsi ini akan menangkapnya, memperbarui hasil ke UI dengan setState, dan menampilkan pesan error. Setelah itu, blok finally memastikan bahwa pesan 'Complete' selalu dicetak, terlepas dari apakah operasi berhasil atau gagal.
 ```
+
+## Praktikum 6: Menggunakan Future dengan StatefulWidget
+
+### Langkah 1: install plugin geolocator
+Tambahkan plugin geolocator dengan mengetik perintah berikut di terminal.
+```dart
+flutter pub add geolocator
+```
+
+### Langkah 2: Tambah permission GPS
+Jika Anda menargetkan untuk platform Android, maka tambahkan baris kode berikut di file android/app/src/main/androidmanifest.xml
+<img src="assets/img/P6-Langkah2.png">
+
+### Langkah 3: Buat file geolocation.dart
+Tambahkan file baru ini di folder lib project Anda.
+<img src="assets/img/P6-Langkah3.png">
+
+### Langkah 4: Buat StatefulWidget
+Buat class LocationScreen di dalam file geolocation.dart
+<img src="assets/img/P6-Langkah4.png">
+
+### Langkah 5: Isi kode geolocation.dart
+<img src="assets/img/P6-Langkah5.png">
+
+```md
+#### Soal 11
+Tambahkan nama panggilan Anda pada tiap properti title sebagai identitas pekerjaan Anda.
+<img src="assets/img/Soal11.png">
+```
+
+### 
