@@ -1,6 +1,6 @@
 # 11 | Pemrograman Asynchronous
 
-## Praktikum 1 
+## Praktikum 1: Mengunduh Data dari Web Service (API)
 
 ### Langkah 1: Buat Project Baru
 Buatlah sebuah project flutter baru dengan nama books di folder src week-11 repository GitHub Anda.
@@ -60,3 +60,32 @@ Lakukan run aplikasi Flutter Anda. Anda akan melihat tampilan akhir seperti gamb
 <img src="assets/img/P1-Hasil.png">
 
 ```
+
+## Praktikum 2: Menggunakan await/async untuk menghindari callbacks
+
+### Langkah 1: Buka file main.dart
+Tambahkan tiga method berisi kode seperti berikut di dalam class _FuturePageState.
+
+<img src="assets/img/P2-Langkah1.png">
+
+### Langkah 2: Tambah method count()
+Lalu tambahkan lagi method ini di bawah ketiga method sebelumnya.
+
+<img src="assets/img/P2-Langkah2.png">
+
+### Langkah 3: Panggil count()
+Lakukan comment kode sebelumnya, ubah isi kode onPressed() menjadi seperti berikut.
+
+<img src="assets/img/P2-Langkah3.png">
+
+### Langkah 4: Run
+Akhirnya, run atau tekan F5 jika aplikasi belum running. Maka Anda akan melihat seperti gambar berikut, hasil angka 6 akan tampil setelah delay 9 detik.
+
+<img src="assets/img/P2-Langkah4.png">
+
+```md
+#### Soal 4
+- Jelaskan maksud kode langkah 1 dan 2 tersebut!
+Kode pada Langkah 1 terdiri dari tiga fungsi asinkron (returnOneAsync, returnTwoAsync, dan returnThreeAsync) yang masing-masing menunggu selama 3 detik sebelum mengembalikan angka 1, 2, dan 3. Pada Langkah 2, saat tombol GO! ditekan, fungsi count() dipanggil untuk menjalankan proses tersebut, kemungkinan menjumlahkan hasil dari ketiga fungsi asinkron tersebut.
+- Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W11: Soal 4".
+``` 
