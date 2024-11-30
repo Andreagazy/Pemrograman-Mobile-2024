@@ -245,4 +245,34 @@ Tambahkan nama panggilan Anda pada tiap properti title sebagai identitas pekerja
 <img src="assets/img/Soal11.png">
 ```
 
-### 
+### Langkah 6: Edit main.dart
+Panggil screen baru tersebut di file main Anda seperti berikut.
+
+```dart
+home: LocationScreen(),
+```
+
+### Langkah 7: Run
+Run project Anda di device atau emulator (bukan browser), maka akan tampil seperti berikut ini.
+
+<img src="assets/img/P6-Langkah7.png">
+
+### Langkah 8: Tambahkan animasi loading
+Tambahkan widget loading seperti kode berikut. Lalu hot restart, perhatikan perubahannya.
+<img src="assets/img/P6-Langkah8.png">
+
+```md
+#### Soal 12
+- Jika Anda tidak melihat animasi loading tampil, kemungkinan itu berjalan sangat cepat. Tambahkan delay pada method getPosition() dengan kode await Future.delayed(const Duration(seconds: 3));
+<img src="assets/img/Soal12-1.png">
+- Apakah Anda mendapatkan koordinat GPS ketika run di browser? Mengapa demikian?
+Bisa mendapatkan koordinat GPS ketika run di browser, tetapi perlu allow access seperti gambar tersebut
+<img src="assets/img/Soal12-2.png">
+- Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W11: Soal 12".
+<img src="assets/img/Soal12-3.png">
+```
+
+## Praktikum 7: Manajemen Future dengan FutureBuilder
+
+Langkah 1: Modifikasi method getPosition()
+Buka file geolocation.dart kemudian ganti isi method dengan kode ini.
