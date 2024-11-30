@@ -360,3 +360,32 @@ Contohnya yaitu sebuah ElevatedButton dengan teks "Green". Ketika tombol ditekan
 
 - Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W11: Soal 16".
 ```
+
+## Praktikum 9: Memanfaatkan async/await dengan Widget Dialog
+
+### Langkah 1: Buat file baru navigation_dialog.dart
+Buat file dart baru di folder lib project Anda.
+
+### Langkah 2: Isi kode navigation_dialog.dart
+<img src="assets/img/P9-Langkah2.png">
+
+### Langkah 3: Tambah method async
+<img src="assets/img/P9-Langkah3.png">
+
+### Langkah 4 : Langkah 4: Panggil method di ElevatedButton
+<img src="assets/img/P9-Langkah4.png">
+
+### Langkah 5: Edit main.dart
+Ubah properti home
+<img src="assets/img/P9-Langkah5.png">
+
+```md
+#### Soal 17
+- Cobalah klik setiap button, apa yang terjadi ? Mengapa demikian ?
+Ketika tombol "Change Color" ditekan, dialog muncul menggunakan showDialog. Pengguna memilih warna (Red, Green, atau Blue) melalui tombol, yang mengubah nilai variabel color. Setelah dialog ditutup dengan Navigator.pop, fungsi setState dipanggil untuk memperbarui UI, sehingga warna latar belakang berubah sesuai pilihan pengguna.
+<img src="assets/img/Soal17.png">
+
+- Gantilah 3 warna pada langkah 3 dengan warna favorit Anda!
+<img src="assets/img/Soal17-1.png">
+- Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W11: Soal 17".
+```
