@@ -329,4 +329,34 @@ Buatlah file baru ini di project lib Anda.
 <img src="assets/img/Soal15.png">
 ```
 
-### 
+### Langkah 3: Tambah method di class _NavigationFirstState
+Tambahkan method ini.
+<img src="assets/img/P8-Langkah3.png">
+
+### Langkah 4: Buat file baru navigation_second.dart
+Buat file baru ini di project lib Anda. Silakan jika ingin mengelompokkan view menjadi satu folder dan sesuaikan impor yang dibutuhkan.
+<img src="assets/img/P8-Langkah4.png">
+
+### Langkah 5: Buat class NavigationSecond dengan StatefulWidget
+<img src="assets/img/P8-Langkah5.png">
+
+### Langkah 6: Edit main.dart
+Lakukan edit properti home.
+
+```dart
+home: const NavigationFirst(),
+```
+
+### Langkah 8: Run
+Lakukan run, jika terjadi error silakan diperbaiki.
+
+```md
+#### Soal 16
+- Cobalah klik setiap button, apa yang terjadi ? Mengapa demikian ?
+Yang terjadi adalah akan muncul sesuai dengan warna yang diset. 
+Contohnya yaitu sebuah ElevatedButton dengan teks "Green". Ketika tombol ditekan, metode Navigator.pop dipanggil untuk menutup halaman saat ini dan mengembalikan nilai berupa warna hijau dengan shade tertentu (Colors.green.shade700) ke halaman sebelumnya.
+- Gantilah 3 warna pada langkah 5 dengan warna favorit Anda!
+<img src="assets/img/Soal16.png">
+
+- Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W11: Soal 16".
+```

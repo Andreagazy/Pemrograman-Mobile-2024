@@ -1,3 +1,4 @@
+import 'package:books/navigation_second.dart';
 import 'package:flutter/material.dart';
 
 class NavigationFirst extends StatefulWidget {
@@ -7,9 +8,7 @@ class NavigationFirst extends StatefulWidget {
   State<NavigationFirst> createState() => _NavigationFirstState();
 }
 
-
-  @override
-  class _NavigationFirstState extends State<NavigationFirst> {
+class _NavigationFirstState extends State<NavigationFirst> {
   Color color = Colors.blue.shade400;
 
   @override
@@ -29,6 +28,13 @@ class NavigationFirst extends StatefulWidget {
       ),
     );
   }
+
+  Future<void> _navigateAndGetColor(BuildContext context) async {
+    color = await Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => const NavigationSecond()),
+        ) ??
+        Colors.blue;
+    setState(() {});
+  }
 }
-
-
