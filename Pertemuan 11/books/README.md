@@ -274,5 +274,30 @@ Bisa mendapatkan koordinat GPS ketika run di browser, tetapi perlu allow access 
 
 ## Praktikum 7: Manajemen Future dengan FutureBuilder
 
-Langkah 1: Modifikasi method getPosition()
+### Langkah 1: Modifikasi method getPosition()
 Buka file geolocation.dart kemudian ganti isi method dengan kode ini.
+
+<img src="assets/img/P7-Langkah1.png">
+
+### Langkah 2: Tambah variabel
+Tambah variabel ini di class _LocationScreenState
+<img src="assets/img/P7-Langkah2.png">
+
+### Langkah 3: Tambah initState()
+Tambah method ini dan set variabel position
+<img src="assets/img/P7-Langkah3.png">
+
+### Langkah 4: Edit method build()
+Ketik kode berikut dan sesuaikan. Kode lama bisa Anda comment atau hapus.
+<img src="assets/img/P7-Langkah4.png">
+
+```md
+#### Soal 13
+- Apakah ada perbedaan UI dengan praktikum sebelumnya? Mengapa demikian?
+Perbedaan utama pada tampilan kode ini adalah adanya indikator loading berupa CircularProgressIndicator yang muncul saat aplikasi memproses data lokasi, sehingga pengguna tahu proses sedang berlangsung. Lokasi ditampilkan dengan lebih jelas menggunakan label seperti "Latitude" dan "Longitude." Selain itu, ada jeda sebelum data muncul, memberikan kesan tampilan yang lebih rapi dan terstruktur.
+- Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W11: Soal 13".
+<img src="assets/img/Soal13.png">
+- Seperti yang Anda lihat, menggunakan FutureBuilder lebih efisien, clean, dan reactive dengan Future bersama UI.
+```
+
+## 
