@@ -300,4 +300,16 @@ Perbedaan utama pada tampilan kode ini adalah adanya indikator loading berupa Ci
 - Seperti yang Anda lihat, menggunakan FutureBuilder lebih efisien, clean, dan reactive dengan Future bersama UI.
 ```
 
+### Langkah 5: Tambah handling error
+Tambahkan kode berikut untuk menangani ketika terjadi error. Kemudian hot restart.
+<img src="assets/img/P7-Langkah5.png">
+
+```md
+#### Soal 14
+- Apakah ada perbedaan UI dengan langkah sebelumnya? Mengapa demikian?
+Iya terdapat perbedaan ketika tida bisa mendapat akses lokasi sehingga muncul kata "Something Terible Happend"
+- Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W11: Soal 14".
+<img src="assets/img/Soal14.png">
+
+```
 ## 
