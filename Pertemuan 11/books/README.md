@@ -312,4 +312,21 @@ Iya terdapat perbedaan ketika tida bisa mendapat akses lokasi sehingga muncul ka
 <img src="assets/img/Soal14.png">
 
 ```
-## 
+
+## Praktikum 8: Navigation route dengan Future Function
+
+### Langkah 1: Buat file baru navigation_first.dart
+Buatlah file baru ini di project lib Anda.
+<img src="assets/img/P8-Langkah1.png">
+
+### Langkah 2: Isi kode navigation_first.dart
+<img src="assets/img/P8-Langkah2.png">
+
+```md
+#### Soal 15
+- Tambahkan nama panggilan Anda pada tiap properti title sebagai identitas pekerjaan Anda.
+- Silakan ganti dengan warna tema favorit Anda.
+<img src="assets/img/Soal15.png">
+```
+
+### 
